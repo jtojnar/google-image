@@ -1,9 +1,13 @@
 {
-	"name": "google-image",
 	"title": "Search Image with Google",
-	"id": "jid1-EtBiaWNm6rJBvw",
+	"name": "google-image",
+	"version": "0.0.1",
 	"description": "Extends image context-menu with option to search the image with Google.",
+	"main": "index.js",
 	"author": "Jan Tojnar",
-	"license": "MIT",
-	"version": "0.1"
+	"engines": {
+		"firefox": ">=33.0a1",
+		"fennec": ">=33.0a1"
+	},
+	"license": "MIT"
 }
