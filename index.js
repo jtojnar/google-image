@@ -1,19 +1,16 @@
-var cm = require('sdk/context-menu');
-var _ = require('sdk/l10n').get;
-var tabs = require('sdk/tabs');
-var data = require("sdk/self").data;
+const cm = require('sdk/context-menu');
+const _ = require('sdk/l10n').get;
+const { getMostRecentBrowserWindow } = require('sdk/window/utils')
+const data = require("sdk/self").data;
 
 cm.Item({
 	context: cm.SelectorContext('img'),
 	label: _('context_menu_search'),
 	contentScriptFile: data.url('context-menu-action.js'),
-	onMessage: function(url) {
-		tabs.open({
-			url: 'http://www.google.com/searchbyimage?image_url=' + encodeURIComponent(url) + '&encoded_image=&image_content=&filename=&hl=&bih=&biw=',
-			inBackground: true,
-			onOpen: function(tab) {
-				tab.activate();
-			}
-		});
+	onMessage: function(imageUrl) {
+		const url = 'http://www.google.com/searchbyimage?image_url=' + encodeURIComponent(imageUrl) + '&encoded_image=&image_content=&filename=&hl=&bih=&biw=';
+		const browser = getMostRecentBrowserWindow().gBrowser
+		const tab = browser.loadOneTab(url, {relatedToCurrent: true})
+		browser.selectedTab = tab;
 	}
 });
