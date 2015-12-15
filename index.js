@@ -4,6 +4,9 @@ const { getMostRecentBrowserWindow } = require('sdk/window/utils')
 const data = require("sdk/self").data;
 const prefs = require("sdk/simple-prefs").prefs;
 
+prefs['name'] = _('addon_name');
+prefs['description'] = _('addon_description');
+
 cm.Item({
 	context: cm.SelectorContext('img'),
 	label: _('context_menu_search'),
