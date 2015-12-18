@@ -1,13 +1,12 @@
 {
 	"title": "Search Image with Google",
 	"name": "google-image",
-	"version": "0.0.5",
+	"version": "0.0.5-2",
 	"description": "Extends image context-menu with option to search the image with Google.",
 	"main": "index.js",
 	"author": "Jan Tojnar",
 	"engines": {
-		"firefox": ">=33.0a1",
-		"fennec": ">=33.0a1"
+		"firefox": ">=33.0a1"
 	},
 	"preferences": [{
 		"name": "loadInBackground",
