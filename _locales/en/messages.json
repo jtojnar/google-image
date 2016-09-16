@@ -1,14 +1,18 @@
 {
 	"addon_name": {
-		"message": "Search Image with Google"
+		"message": "Search Image with Google",
+		"description": "Name of the add-on displayed in about:addons and AMO listings."
 	},
 	"addon_description": {
-		"message": "Extends image context-menu with option to search the image with Google."
+		"message": "Extends image context-menu with option to search the image with Google.",
+		"description": "Description of the add-on displayed in about:addons and AMO listings."
 	},
 	"loadInBackground_title": {
-		"message": "Load search results in background"
+		"message": "Load search results in background",
+		"description": "Label of an checkbox in add-on settings."
 	},
 	"context_menu_search": {
-		"message": "Search Image with Google"
+		"message": "Search Image with Google",
+		"description": "Item in the context menu when clicking on an image."
 	}
 }
