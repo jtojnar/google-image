@@ -1,0 +1,14 @@
+{
+	"addon_name": {
+		"message": "Vyhledat obrázek Googlem"
+	},
+	"addon_description": {
+		"message": "Přidává do kontextové nabídky možnost vyhledat obrázek Googlem."
+	},
+	"loadInBackground_title": {
+		"message": "Otevírat výsledky hledání na pozadí"
+	},
+	"context_menu_search": {
+		"message": "Vyhledat obrázek Googlem"
+	}
+}

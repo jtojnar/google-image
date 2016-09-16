@@ -1,0 +1,14 @@
+{
+	"addon_name": {
+		"message": "Search Image with Google"
+	},
+	"addon_description": {
+		"message": "Extends image context-menu with option to search the image with Google."
+	},
+	"loadInBackground_title": {
+		"message": "Load search results in background"
+	},
+	"context_menu_search": {
+		"message": "Search Image with Google"
+	}
+}
