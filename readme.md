@@ -1,3 +1,8 @@
+Abandoned. Please use [Image reverse search with Google](https://addons.mozilla.org/en-US/firefox/addon/image-reverse-search/).
+===========
+
+----------------
+
 Search Image with Google
 ========================
 
